@@ -12,7 +12,7 @@ function build () {
     --rm -v /var/run/docker.sock:/var/run/docker.sock \
     -v "$PWD:/$PWD" -w="/$PWD" \
     ${VUE_IMAGE_NAME} \
-    bash -c "npm install && npm run serve -- --port $1 --host 0.0.0.0"
+    sh -c "npm install && npm run serve -- --port $1 --host 0.0.0.0"
   fi
 }
 

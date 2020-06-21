@@ -21,7 +21,7 @@ function build () {
     --rm -v /var/run/docker.sock:/var/run/docker.sock \
     -v "$PWD:/$PWD" -w="/$PWD" \
     ${VUE_IMAGE_NAME} \
-    bash -c "npm install && npm run build"
+    sh -c "npm install && npm run build"
   fi
 }
 
