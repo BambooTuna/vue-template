@@ -1,24 +1,11 @@
 # vue-template
 
-## Project setup
+### serve
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+sh serve.sh 8080
 ```
 
-### Compiles and minifies for production
+### build
 ```
-npm run build
+sh build.sh
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
